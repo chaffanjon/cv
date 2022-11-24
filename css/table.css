@@ -1,0 +1,31 @@
+table#customers {
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+#customers th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #04AA6D;
+    color: white;
+}
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}

@@ -1,0 +1,339 @@
+@import 'headerfooter.css';
+@import 'table.css';
+
+/*STYLES GENERAUX*/
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.avatar {
+    background-image: url(avant.jpg);
+    width: 150px;
+    height: 150px;
+    border: rgb(70, 120, 126);
+    border-style: solid;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    
+    
+}
+
+
+/* Les descendants de rang impair sont stylés avec une couleur     */
+tbody:nth-child(odd)  { background-color : #CED4E5; }
+/* Les descendants de rang pair sont stylés avec une autre couleur */
+tbody:nth-child(even) { background-color : #E8EBF5; }
+th { background-color : #557CBA; padding:0.7em; }
+td { padding:0.5em; }
+
+
+.center{
+    justify-content: center;
+}
+.avatar:hover {
+    background-image: url(apres.jpg);
+
+}
+
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+.btndownload{
+    width: max-content;
+}
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.prez{
+    border-bottom: 2px dashed #ccc;
+}
+.prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c85{
+    width: 85%;
+    background-color: #8B8;
+}
+.c90{
+    width: 90%;
+    background-color: #4B8;
+}
+.c95{
+    width: 95%;
+    background-color: #4B8;
+}
+.c100{
+    width: 100%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+/*SECTION INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+.notification {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 8px;
+    background: white;
+    padding: 8px 16px;
+    border: 1px solid rgb(235,235,235);
+    text-align: center;
+    max-width: 300px;
+    margin: 3px;
+   /*background-color: #000;*/
+    
+  }
+  .notification:hover {
+    box-shadow: 0 0 3px rgb(135, 148, 150);
+}
+
+  
+  .notification .notification-content {
+    flex-grow: 1;
+    padding: 0 24px;
+    min-width: 300px;
+  }
+  
+  .notification p {
+    margin: 0;
+    line-height: 1.4;
+  }
+  
+  .notification small {
+    color: #999999;
+    font-weight: bold;
+  }
+  .avatar-large {
+    width: 56px;
+    border-radius: 50%;
+}
+.flex-item {
+    text-align: center;
+  }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+.hiddenlarge {
+    visibility: hidden; 
+    height: 0px;
+    
+    
+}
+  
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 1200px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #666;
+    }
+
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a{
+        border: 2px solid transparent;
+    }
+    .prez a:hover{
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+    .notification{
+        /*background-color: rgb(212, 47, 47);*/
+        display: flex;
+        text-align: center;
+        max-width: 100%;
+        flex-wrap: nowrap;
+    }
+    .flex-container {
+        display: inline;
+        flex-wrap: nowrap;
+      }
+    .hiddenlarge {
+        visibility: visible;  
+        height: max-content;
+        color: rgb(70, 120, 126);
+    }
+
+}
+
+
+
+  

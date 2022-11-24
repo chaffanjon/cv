@@ -1,0 +1,42 @@
+/*HEADER & FOOTER*/
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/cv-cover.jpg") #4f4f4f;
+    box-shadow: 0px 0px 15px #333;
+}
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px; 
+    padding-right: 50px; 
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+   
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    border-top: 2px solid #fff;
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}
+body{
+    background: #ededed;
+    margin-top: 130px; /* Add a top margin to avoid content overlay */
+}
